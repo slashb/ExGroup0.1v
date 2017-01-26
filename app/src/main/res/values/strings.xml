@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">친구랑운동</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <string name="facebook_app_id">1099410106836082</string>
+
+    <string name="join">회원가입</string>
+    <string name="login">로그인</string>
+
+    <string name="nickname">닉네임</string>
+    <string name="email">이메일 주소</string>
+    <string name="phone">휴대폰 번호</string>
+    <string name="password">비밀번호</string>
+    <string name="auto_login">자동 로그인</string>
+
+    <string name="info_phone">휴대폰 번호는 개인 식별 용도 외에는 사용되지 않습니다.</string>
+    <string name="password_chk">비밀번호 확인</string>
+    <string name="height_unit">cm</string>
+    <string name="weight_unit">kg</string>
+    <string name="height">키</string>
+    <string name="weight">몸무게</string>
+    <string name="info_bmi">BMI지수</string>
+    <string name="wannabeKg">목표 체중</string>
+    <string name="age_unit">세</string>
+    <string name="group_name">그룹명</string>
+    <string name="invite_sms">문자로 초대하기</string>
+    <string name="createBtn">그룹 생성</string>
+    <string name="wait">초대 승인을 기다리고 있습니다.</string>
+</resources>
