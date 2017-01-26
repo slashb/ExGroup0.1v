@@ -12,17 +12,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <RelativeLayout
-        android:clickable="true"
+    <include
         android:id="@+id/profile_box"
-        android:background="@color/colorAccent"
         android:layout_width="match_parent"
-        android:layout_height="160dp">
-        <TextView
-            android:text="프로필자리"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/text_big" />
-    </RelativeLayout>
+        android:layout_height="120dp"
+        layout="@layout/include_home_profile_box"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -47,7 +42,7 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
+        android:layout_marginTop="98dp"
         app:layout_anchor="@id/profile_box"
         app:layout_anchorGravity="bottom|end"
         app:srcCompat="@android:drawable/ic_dialog_email"
