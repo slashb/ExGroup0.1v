@@ -16,20 +16,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //facebook 초기화
         FacebookSdk.sdkInitialize(getApplicationContext());
         AppEventsLogger.activateApp(this);
-        new Thread(new Runnable() {
 
-            @Override
-            public void run() {
-
-                try {
-                    Thread.sleep(2000);
-                    // onClickScreen(null);
-                } catch (Exception e) {
-                }
-            }
-        }).start();
 
         goNextActivity();
 

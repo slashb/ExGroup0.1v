@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".ui.IntroActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/no" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -40,7 +40,9 @@
         <activity android:name=".ui.join.InputInit2Activity" />
         <activity android:name=".ui.group.create.GroupAddActivity" />
         <activity android:name=".ui.group.room.GroupHomeActivity" />
-        <activity android:name=".ui.group.create.GroupWaitingActivity"></activity>
+        <activity android:name=".ui.group.create.GroupWaitingActivity" />
+        <activity android:name=".ui.EnterActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
