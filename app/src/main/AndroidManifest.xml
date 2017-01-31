@@ -22,7 +22,7 @@
         </activity>
         <activity
             android:name=".ui.IntroActivity"
-            android:theme="@style/no" />
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
@@ -36,13 +36,21 @@
             android:windowSoftInputMode="adjustResize" />
         <activity android:name=".ui.HomeActivity" />
         <activity android:name=".ui.join.InputInit1Activity" />
-        <activity android:name=".ui.mypage.MyHomeActivity" />
+        <activity android:name=".ui.mypage.MyHomeActivity"
+            android:label="@string/mypage"/>
         <activity android:name=".ui.join.InputInit2Activity" />
         <activity android:name=".ui.group.create.GroupAddActivity" />
         <activity android:name=".ui.group.room.GroupHomeActivity" />
         <activity android:name=".ui.group.create.GroupWaitingActivity" />
-        <activity android:name=".ui.EnterActivity"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".ui.EnterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ui.settings.PushSettingActivity"
+            android:label="@string/settings_push"/>
+        <activity android:name=".ui.settings.AccountSettingActivity"
+            android:label="@string/settings_account"/>
+        <activity android:name=".ui.settings.ToDeveloperActivity"
+            android:label="@string/settings_to_dev"></activity>
     </application>
 
 </manifest>
