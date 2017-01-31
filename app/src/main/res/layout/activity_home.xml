@@ -18,7 +18,9 @@
         android:layout_height="120dp"
         layout="@layout/include_home_profile_box"/>
 
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -36,7 +38,7 @@
         android:layout_height="@dimen/group_cube"
         android:layout_margin="@dimen/group_cube_margin"/>
     </LinearLayout>
-
+</ScrollView>
 </LinearLayout>
     <com.github.clans.fab.FloatingActionMenu
         android:id="@+id/fab"
