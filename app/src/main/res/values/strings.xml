@@ -39,4 +39,10 @@
     <string name="group_img">그룹 이미지 설정</string>
     <string name="weigh_start">시작 체중 인증하기</string>
     <string name="input_weight">체중 입력</string>
+    <string name="title_activity_home2_acrivity">Home2Acrivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

@@ -36,7 +36,7 @@ public class EnterActivity extends AppCompatActivity {
 
         }else {
             //아니면 홈화면
-            U.getInstance().goNext(this, HomeActivity.class, false);
+            U.getInstance().goNext(this, Home2Activity.class, false);
         }
 
     }
