@@ -5,6 +5,7 @@
     android:layout_height="120dp"
     android:background="@color/colorAccent">
     <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/group_card"
         android:layout_margin="16dp"
         android:layout_gravity="center_vertical"
         android:layout_width="100dp"

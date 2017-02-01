@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">친구랑운동</string>
-    <string name="action_settings">Settings</string>
-    <string name="section_format">Hello World from section: %1$d</string>
 
     <string name="facebook_app_id">1099410106836082</string>
 
@@ -25,10 +23,20 @@
     <string name="age_unit">세</string>
     <string name="group_name">그룹명</string>
     <string name="invite_sms">문자로 초대하기</string>
-    <string name="createBtn">그룹 생성</string>
     <string name="wait">초대 승인을 기다리고 있습니다.</string>
     <string name="settings_to_dev">개발자에게 문의하기</string>
     <string name="settings_account">계정 관리</string>
     <string name="settings_push">푸시알림 설정</string>
     <string name="mypage">마이페이지</string>
+    <string name="group_add">그룹 생성</string>
+    <string name="group_startday">활동시작일</string>
+    <string name="group_endday">활동종료일</string>
+    <string name="when_group_start">그룹 인원 전원 참가 시</string>
+    <string name="date_pick">날짜 선택</string>
+    <string name="group_member">그룹 멤버 수</string>
+    <string name="person_unit">명</string>
+    <string name="group_name_sample">끝나고 치킨 먹자</string>
+    <string name="group_img">그룹 이미지 설정</string>
+    <string name="weigh_start">시작 체중 인증하기</string>
+    <string name="input_weight">체중 입력</string>
 </resources>
