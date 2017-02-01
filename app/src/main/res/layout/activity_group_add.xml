@@ -51,6 +51,7 @@
             android:layout_height="@dimen/gmd_bar_height">
 
             <Spinner
+                android:layout_gravity="center_vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/gmd_button_height"
                 android:layout_margin="8dp"
@@ -98,6 +99,7 @@
                 android:text="@string/group_endday" />
 
             <Button
+                android:id="@+id/datepickBtn"
                 android:layout_width="wrap_content"
                 android:layout_height="@dimen/gmd_button_height"
                 android:layout_margin="@dimen/gmd_margin_default"
