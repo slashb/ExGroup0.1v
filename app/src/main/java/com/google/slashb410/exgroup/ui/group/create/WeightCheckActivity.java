@@ -2,7 +2,6 @@ package com.google.slashb410.exgroup.ui.group.create;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
@@ -11,7 +10,6 @@ import com.google.slashb410.exgroup.R;
 import com.google.slashb410.exgroup.util.U;
 import com.miguelbcr.ui.rx_paparazzo.RxPaparazzo;
 import com.miguelbcr.ui.rx_paparazzo.entities.size.ScreenSize;
-import com.yalantis.ucrop.UCrop;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -29,13 +27,12 @@ public class WeightCheckActivity extends AppCompatActivity {
 
     @OnClick(R.id.cam_weightBtn)
     public void goCam(){
-        UCrop.Options options = new UCrop.Options();
-        options.setToolbarColor(ContextCompat.getColor(this, R.color.colorAccent));
-        options.setMaxBitmapSize(1024 * 1024); //1메가
+//        UCrop.Options options = new UCrop.Options();
+//        options.setToolbarColor(ContextCompat.getColor(this, R.color.colorAccent));
+//        options.setMaxBitmapSize(1024 * 1024); //1메가
 
         RxPaparazzo.takeImage(this)
                 .size(new ScreenSize())
-                .crop(options)
                 .usingCamera()
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())

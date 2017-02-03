@@ -14,6 +14,7 @@ import android.widget.GridView;
 
 import com.google.slashb410.exgroup.R;
 import com.google.slashb410.exgroup.ui.group.create.GroupAddActivity;
+import com.google.slashb410.exgroup.ui.group.room.GroupHomeActivity;
 import com.google.slashb410.exgroup.ui.mypage.MyHomeActivity;
 import com.google.slashb410.exgroup.util.U;
 
@@ -45,6 +46,8 @@ public class Home2Activity extends AppCompatActivity
 
                 if(position==groupName.length-1){
                     U.getInstance().goNext(getApplicationContext(), GroupAddActivity.class, false);
+                }else{
+                    U.getInstance().goNext(getApplicationContext(), GroupHomeActivity.class, false);
                 }
             }
         });

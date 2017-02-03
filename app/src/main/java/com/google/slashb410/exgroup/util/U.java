@@ -1,8 +1,10 @@
 package com.google.slashb410.exgroup.util;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
 import android.util.Log;
 
 import com.android.volley.RequestQueue;
@@ -46,5 +48,27 @@ public class U {
         if(isSliding){
             ((Activity) context).overridePendingTransition(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
         }
+    }
+
+    //작업진행중 창 띄우기
+    public void onProgress(Handler handler, Context context, String msg){
+
+        ProgressDialog progressDialog = new ProgressDialog(context);
+
+        progressDialog.setMessage(msg);
+        progressDialog.show();
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    Thread.sleep(800);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                handler.sendEmptyMessage(0);
+                progressDialog.dismiss();
+            }
+        }).start();
     }
 }
