@@ -12,17 +12,32 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.GridView;
 
+import com.github.clans.fab.FloatingActionButton;
+import com.github.clans.fab.FloatingActionMenu;
 import com.google.slashb410.exgroup.R;
 import com.google.slashb410.exgroup.ui.group.create.GroupAddActivity;
 import com.google.slashb410.exgroup.ui.group.room.GroupHomeActivity;
 import com.google.slashb410.exgroup.ui.mypage.MyHomeActivity;
+import com.google.slashb410.exgroup.ui.write.WriteExcerciseActivity;
+import com.google.slashb410.exgroup.ui.write.WriteMealActivity;
+import com.google.slashb410.exgroup.ui.write.WriteWeightActivity;
 import com.google.slashb410.exgroup.util.U;
 
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class Home2Activity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    @BindView(R.id.fab)
+    FloatingActionMenu floatingActionMenu;
+    @BindView(R.id.quick_scale)
+    FloatingActionButton scaleQuick;
+    @BindView(R.id.quick_exercise)
+    FloatingActionButton exerciseQuick;
+    @BindView(R.id.quick_meal)
+    FloatingActionButton mealQuick;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,14 +68,24 @@ public class Home2Activity extends AppCompatActivity
         });
         //-------------------------------------------------------------------------------------------
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        scaleQuick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                U.getInstance().goNext(getApplicationContext(), WriteWeightActivity.class, false);
+            }
+        });
+        exerciseQuick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                U.getInstance().goNext(getApplicationContext(), WriteExcerciseActivity.class, false);
+            }
+        });
+        mealQuick.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                U.getInstance().goNext(getApplicationContext(), WriteMealActivity.class, false);
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(

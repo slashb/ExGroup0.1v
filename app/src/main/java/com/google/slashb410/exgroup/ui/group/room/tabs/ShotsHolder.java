@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.slashb410.exgroup.R;
+import com.google.slashb410.exgroup.model.group.ShotData;
 
 /**
  * Created by Tacademy on 2017-02-03.
@@ -34,6 +35,32 @@ class ShotsHolder extends RecyclerView.ViewHolder {
         content = (TextView) itemView.findViewById(R.id.content_shot);
         numLike = (TextView) itemView.findViewById(R.id.numLike);
         numComments = (TextView) itemView.findViewById(R.id.numComments);
+    }
+
+    public void bindOnCard(ShotData results) {
+
+        ShotData mResults = results;
+        switch (mResults.getBoardType()+"") {
+            case "0":
+                menuImg.setImageResource(R.drawable.scale_white);
+                break;
+            case "1":
+                menuImg.setImageResource(R.drawable.exercise_white);
+                break;
+            case "2":
+                menuImg.setImageResource(R.drawable.meal_white);
+                break;
+        }
+
+        //holder.profileImg.setImageDrawable(mResults.getPic());
+        nickname.setText(mResults.getNickname());
+        dateNtime.setText(mResults.getDateNtime());
+        summary.setText(mResults.getSummary());
+        content.setText(mResults.getContent());
+        numLike.setText(mResults.getNumLike()+"");
+        numComments.setText(mResults.getNumComment()+"");
+
+
     }
 
 

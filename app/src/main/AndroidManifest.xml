@@ -50,7 +50,7 @@
             android:name=".ui.group.create.GroupAddActivity"
             android:label="@string/group_add" />
         <activity
-            android:name=".ui.group.room.GroupHomeActivity" />
+            android:name=".ui.group.room.GroupHomeActivity"/>
         <activity android:name=".ui.group.create.GroupWaitingActivity" />
         <activity
             android:name=".ui.EnterActivity"
@@ -75,9 +75,10 @@
         <activity android:name=".ui.write.WriteMealActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".ui.write.WriteWeightActivity"
+        <activity
+            android:name=".ui.write.WriteWeightActivity"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustResize"></activity>
+            android:windowSoftInputMode="stateHidden" />
     </application>
 
 </manifest>
