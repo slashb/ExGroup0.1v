@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.google.slashb410.exgroup">
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -10,6 +11,7 @@
     <uses-feature android:name="android.hardware.camera2" />
 
     <application
+        tools:replace="android:icon"
         android:name=".util.CameraApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -49,8 +51,7 @@
         <activity
             android:name=".ui.group.create.GroupAddActivity"
             android:label="@string/group_add" />
-        <activity
-            android:name=".ui.group.room.GroupHomeActivity"/>
+        <activity android:name=".ui.group.room.GroupHomeActivity" />
         <activity android:name=".ui.group.create.GroupWaitingActivity" />
         <activity
             android:name=".ui.EnterActivity"
@@ -69,16 +70,21 @@
             android:name=".ui.Home2Activity"
             android:label="@string/title_activity_home2_acrivity"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ui.write.WriteExcerciseActivity"
+        <activity
+            android:name=".ui.write.WriteExcerciseActivity"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustResize"/>
-        <activity android:name=".ui.write.WriteMealActivity"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".ui.write.WriteMealActivity"
             android:theme="@style/AppTheme.NoActionBar"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".ui.write.WriteWeightActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".ui.group.room.tabs.comments.GroupShotsCommentsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
     </application>
 
 </manifest>

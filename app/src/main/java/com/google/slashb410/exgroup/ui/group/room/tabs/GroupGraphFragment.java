@@ -18,6 +18,9 @@ public class GroupGraphFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+       // getActivity().getActionBar().hide();
+
         return inflater.inflate(R.layout.fragment_group_graph, container, false);
+
     }
 }

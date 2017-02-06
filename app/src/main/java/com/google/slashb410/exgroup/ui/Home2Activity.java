@@ -80,7 +80,9 @@ public class Home2Activity extends AppCompatActivity
                 U.getInstance().goNext(getApplicationContext(), WriteExcerciseActivity.class, false);
             }
         });
+
         mealQuick.setOnClickListener(new View.OnClickListener() {
+
             @Override
             public void onClick(View v) {
                 U.getInstance().goNext(getApplicationContext(), WriteMealActivity.class, false);
